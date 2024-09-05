@@ -1,0 +1,10 @@
+{
+    "name": "PHP MVC system for task",
+    "description": "PHP MySQL Wrapper and object mapper which utilizes MySQLi and prepared statements",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "files": ["MysqliDb.php", "dbObject.php"]
+    }
+}

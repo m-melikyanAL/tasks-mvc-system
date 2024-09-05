@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #d3d3d3, #a8e6a1) no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#mainContainer {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+#wrapper {
+    margin-top: 10vh;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    border: 2px solid #666;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.input {
+    flex-grow: 4;
+    padding: 8px;
+    border: 1px solid #666;
+    border-radius: 8px;
+    outline:none;
+}
+
+.input:focus {
+    border: 2px solid rgb(32, 63, 29);
+}
+
+.addBtn {
+    flex-grow: 1;
+    background-color: rgb(102, 116, 100);
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    color: white;
+    border: 2px solid rgb(32, 63, 29);
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: rgb(32, 63, 29);
+}
+
+#unorderedListOfTasks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 1vw 0;
+    font-size: calc(14px,2vw);
+    color: white;
+    background: linear-gradient(to right, rgb(102, 116, 100), rgb(160, 174, 158));
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+li:hover {
+    background: linear-gradient(to right, rgb(82, 92, 80), rgb(130, 144, 128));
+}
+
+.taskCheckbox {
+    margin-right: 10px;
+    accent-color: rgb(102, 116, 100);
+}
+
+.taskText {
+    flex-grow: 1;
+    word-wrap: break-word;
+    max-width: 75%;
+}
+
+.taskText.completed {
+    text-decoration: line-through;
+    color: #d3d3d3;
+}
+
+.removedBtn {
+    background-color: rgb(102, 116, 100);
+    padding: 8px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid rgb(32, 63, 29);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.removedBtn:hover {
+    background-color: rgb(32, 63, 29);
+}
